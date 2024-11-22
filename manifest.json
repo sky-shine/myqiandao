@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Check-in Extension",
+    "version": "1.0",
+    "description": "Auto check-in for multiple websites",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": [
+      "*://*/*"
+    ]
+  }

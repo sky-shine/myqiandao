@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+    button {
+      width: 100%;
+      margin: 5px 0;
+      padding: 8px;
+    }
+    #status {
+      margin-top: 10px;
+      padding: 5px;
+      font-size: 14px;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+    }
+    .button-group {
+      display: flex;
+      gap: 5px;
+    }
+    .button-group button {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <button id="checkInAll">一键签到</button>
+  <div class="button-group">
+    <button id="showLogs">查看日志</button>
+    <button id="clearLogs">清除日志</button>
+  </div>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
